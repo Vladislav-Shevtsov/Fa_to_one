@@ -1,10 +1,12 @@
-# Goal
+### Goal###
 The script combines fasta files of different loci located in different directories into one fasta file for each sample.
 
 To achieve the distribution of locus files to folders that correspond to the name of the locus, please see the "move_to_folder" script https://github.com/Vladislav-Shevtsov/Sort-files-by-pattern
 
 
-input files should be in .fasta format 
+###input###
+
+The script receive files in .fasta format 
 
 example : file.fasta	
 
