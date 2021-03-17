@@ -7,48 +7,48 @@ example : file.fasta
 
 Real life scenario:
 
-folder_1: 
+* folder_1_sample_1: 
 
-file1.fasta
+       locus_1.fasta
 
-file2.fasta
+       locus_2.fasta
 
-file3.fasta
+       locus_3.fasta
 
-........
+       ........
 
-........
+       ........
 
-file_n.fasta
+locus_n.fasta
 
 
-Folder_2:
+* Folder_2_sample_2:
 
-file1.fasta
+      locus_1.fasta
 
-file2.fasta
+      locus_2.fasta
 
-file3.fasta
+      locus_3.fasta
 
-........
+       ........
 
-........
+       ........
 
-file_n.fasta
+       locus_n.fasta
 
-Folder_3: 
+* Folder_3_sample_3: 
 
-file1.fasta
+       locus_1.fasta
 
-file2.fasta
+       locus_2.fasta
 
-file3.fasta
+       locus_3.fasta
 
-........
+       ........
 
-........
+       ........
 
-file_n.fasta
+       locus__n.fasta
 
 ### output ### 
 The result is following:
