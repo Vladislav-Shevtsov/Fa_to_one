@@ -1,5 +1,5 @@
 # Fa_to_one
-Convert Fasta files located in different directories into one file 
+Combine Fasta files located in different directories into one file 
 
 input files should be in .fasta format 
 
