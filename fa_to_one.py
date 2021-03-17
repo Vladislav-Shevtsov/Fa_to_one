@@ -1,6 +1,8 @@
 import os
-dir = '/path_to/input_dir' #change to input folder
-out_dir = '/path_to/output_dir' #change to input folder 
+import sys 
+
+dir = sys.argv[1]
+out_dir = sys.argv[2]
 allfiles = os.listdir(dir)
 fa_list = [os.path.join(dir, i) for i in os.listdir(dir) if i.endswith('.fasta')]
 def generate_name(name, suffix = 'allinone'): 
@@ -19,4 +21,3 @@ with open(bash_file, 'w') as f:
         if not os.path.isfile(out_sample):
             f.write(f'cat {folder}/*.fasta >> {out_sample} \n')
             print(out_sample)
-
