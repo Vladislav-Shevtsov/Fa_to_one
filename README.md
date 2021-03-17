@@ -67,8 +67,9 @@ Sample_3_all_loci_in_one_file.fasta
 output represents files(reads) with .fasta extension located in output folder that you specify in code.    
 
 ### command line examples ###
+The script receives two arguments: path to folder containing fasta files and output directory
 
-```python3 Fa_to_one.py``` #This will generate bash file named "fa_to_one.sh"
+```python3 Fa_to_one.py /path/to/folders_containing_fasta_files /path/to/out_dir``` #This will generate bash file named "fa_to_one.sh"
 
 ```./fa_to_one.sh``` #This will execute the bash file 
 
