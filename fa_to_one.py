@@ -1,16 +1,16 @@
 import os
-import sys 
+import sys
 
 dir = sys.argv[1]
-out_dir = sys.argv[2]
+out_dir = sys.argv[2] 
 allfiles = os.listdir(dir)
 fa_list = [os.path.join(dir, i) for i in os.listdir(dir) if i.endswith('.fasta')]
-def generate_name(name, suffix = 'allinone'): 
+def generate_name(name, suffix = 'allinone.fasta'): 
     a, b = os.path.splitext(name)
     new_name = a + '_'+ suffix + b
     return new_name
 
-bash_file = 'fa_to_one.sh' #The name of bash file can be changed 
+bash_file = 'fa_to_one.sh'
 with open(bash_file, 'w') as f:
     f.write('#!/bin/bash \n')
     for folder in allfiles:
@@ -19,5 +19,7 @@ with open(bash_file, 'w') as f:
         out_sample = generate_name(out_sample)
         print(folder, name, out_sample)
         if not os.path.isfile(out_sample):
-            f.write(f'cat {folder}/*.fasta >> {out_sample} \n')
+            f.write(f'cat {dir}/{folder}/*.fasta >> {out_sample} \n')
             print(out_sample)
+
+#cat FA_Tul_18/*.fa > Tul_18_1_14
